@@ -159,80 +159,80 @@ type CompanyInsiderTransaction struct {
 	FilingTimestamp uint64 `json:"filing_timestamp"`
 }
 
-func (c *Client) GetRealtimeStockPrice(request Request) (*RealTimePriceResult, error) {
+func (c *Client) GetRealtimeStockPrice(request Request) (RealTimePriceResult, error) {
 	var results RealTimePriceResult
 	err := c.Get("stock/realtime", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetHistoricalStockPrice(request Request) (*HistoricalPriceResult, error) {
+func (c *Client) GetHistoricalStockPrice(request Request) (HistoricalPriceResult, error) {
 	var results HistoricalPriceResult
 	err := c.Get("stock/historical", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetCompanyFinancials(request Request) (*CompanyFinancialsResult, error) {
+func (c *Client) GetCompanyFinancials(request Request) (CompanyFinancialsResult, error) {
 	var results CompanyFinancialsResult
 	err := c.Get("company/financials", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetCompanyProfile(request Request) (*CompanyProfileResult, error) {
+func (c *Client) GetCompanyProfile(request Request) (CompanyProfileResult, error) {
 	var results CompanyProfileResult
 	err := c.Get("company/profile", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetCompanyFinancialSummary(request Request) (*CompanyFinancialSummaryResult, error) {
+func (c *Client) GetCompanyFinancialSummary(request Request) (CompanyFinancialSummaryResult, error) {
 	var results CompanyFinancialSummaryResult
 	err := c.Get("company/financialSummary", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetCompanyOwnershipStructure(request Request) (*CompanyOwnershipStructure, error) {
+func (c *Client) GetCompanyOwnershipStructure(request Request) (CompanyOwnershipStructure, error) {
 	var results CompanyOwnershipStructure
 	err := c.Get("company/ownership", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetCompanyInsiderTransactions(request Request) (*CompanyInsiderTransactionResult, error) {
+func (c *Client) GetCompanyInsiderTransactions(request Request) (CompanyInsiderTransactionResult, error) {
 	var results CompanyInsiderTransactionResult
 	err := c.Get("company/insiderTransaction", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
 
-func (c *Client) GetSecFilingLink(request Request) (*SecFilingLinkResult, error) {
+func (c *Client) GetSecFilingLink(request Request) (SecFilingLinkResult, error) {
 	var results SecFilingLinkResult
 	err := c.Get("company/secFilingLink", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetStockNews(request Request) (*StockNewsResult, error) {
+func (c *Client) GetStockNews(request Request) (StockNewsResult, error) {
 	var results StockNewsResult
 	err := c.Get("company/news", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetCorporateSplits(request Request) (*CorporateSplitsResult, error) {
+func (c *Client) GetCorporateSplits(request Request) (CorporateSplitsResult, error) {
 	var results CorporateSplitsResult
 	err := c.Get("company/actions/splits", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
 
-func (c *Client) GetCorporateDividends(request Request) (*CorporateDividendsResult, error) {
+func (c *Client) GetCorporateDividends(request Request) (CorporateDividendsResult, error) {
 	var results CorporateDividendsResult
 	err := c.Get("company/actions/dividends", request.GetUrlParams(), &results)
 
-	return &results, err
+	return results, err
 }
