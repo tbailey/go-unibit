@@ -5,7 +5,7 @@ type RealtimePrice struct {
 	Ticker    string `json:"ticker"`
 	Date      string `json:"date"`
 	Minute    string `json:"minute"`
-	Price     uint64 `json:"price"`
+	Price     float64 `json:"price"`
 	Volume    uint64 `json:"volume"`
 	Timezone  string `json:"timezone"`
 	Timestamp uint64 `json:"timestamp"`

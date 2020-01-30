@@ -11,7 +11,7 @@ func main()  {
 	}
 
 	client := client.NewClient("Demo")
-	r, err := client.GetCompanyProfile(request)
+	r, err := client.GetRealtimeStockPrice(request)
 	if err != nil {
 		log.Fatal(err)
 	}
