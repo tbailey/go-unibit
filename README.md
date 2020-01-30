@@ -1,7 +1,7 @@
 # go-unibit
 
 
-__Simple and easy to use client for stock, forex and crpyto data from [unibit.ai](https://unibit.ai/) written in Go. Access real-time market data from 60+ stock exchanges, 10 forex brokers, and 15+ crypto exchanges__
+__Simple client written in go that wraps [unibit.ai](https://unibit.ai/) API's__
 
 ## Installation
 
